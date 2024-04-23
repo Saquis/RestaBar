@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    /*zafari */
+    -moz-box-sizing: border-box;
+    /*mozila */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-family: 16px;
+}
+
+.contenedor {
+    border: 1px solid;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden; /*oculta si algo se desborda*/
+}
+
+/*Header*/
+header {
+    width: 100%;/*anchura*/
+    border: 1px solid;
+    background: url(../Img/cafe8.jpg) #281a0c;
+    background-size: cover;/*cubre tdod el contenedor*/
+    background-attachment: fixed;/*sostiene la imagen fija*/
+    background-position: center 0;/*me ayuda o tenecr centrada la img*/
+
+}
+
+header .contenedor {
+    position: relative;/*puedo dar una altura o margenes personalizados*/
+    height: 700px;/*altura*/
+}
+header  .menu {
+    width: 100%;
+    text-align: right;
+}
+header  .menu a{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;/*le podemos dar margenes a cualquier parte */
+    margin: 40px 20px; /*recorre al centido de rejoj*/
+    text-decoration: none;
+    position: relative;
+}
+header .menu a:hover{ /*seudoclase */
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+
+}
+.texto{
+    border: 1px solid;
+}
+header .texto{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -52PX;
+
+}
+header .texto.nombre{
+    font-size: 50px;
+    font-weight: 600;
+
+}
+header .texto .nombre span{
+    font-weight: 300;
+}
+header .texto h3{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+
+}
+/* main  */
+.main{
+    background: url(../Img/caffe8.jpg);
+    background-repeat: repeat;
+
+
+}
+.acercaDe{
+    border: 1px solid red;
+}
+.main .acercaDe .contenedor{
+    overflow: visible;
+    position: relative;
+}
+.main .acercaDe .foto{
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+}
